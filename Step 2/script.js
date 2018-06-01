@@ -1,11 +1,10 @@
-document.getElementById('next-btn').addEventListener('mousedown', function (){
-	document.getElementById('next-btn').classList.add('next-btn-click')
-	console.log('success!')
-})
 
+const nextButton = document.getElementById('next-btn');
 
-document.getElementById('next-btn').addEventListener('mouseup', function (){
-	document.getElementById('next-btn').classList.remove('next-btn-click')
-	console.log('success... again!')
-})
-;
+nextButton.addEventListener('mousedown', () => {
+  nextButton.classList.add('next-btn-click');
+});
+
+nextButton.addEventListener('mouseup', () => {
+  nextButton.classList.remove('next-btn-click');
+});

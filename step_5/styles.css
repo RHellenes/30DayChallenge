@@ -1,0 +1,124 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url('img/background.jpg');
+	background-size: auto 100% ;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100vw;
+	height: 100vh;
+
+	overflow: hidden;
+
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.ticket{
+	width: 40%;
+	min-width: 500px;
+	padding:50px;
+	border-radius: 3px;
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.top-section{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.destination{
+	width: 40%;
+}
+
+.destination:last-of-type h2,
+.destination:last-of-type h5{
+	text-align: right;
+}
+
+.destination h2{
+	font-size: 4em;
+	font-family: 'Roboto' , sans-serif;
+	color: #0f93d9;
+	font-weight: 900;
+	margin:0;
+}
+
+.destination h5{
+	font-size: 1em;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-family: 'Roboto' , sans-serif;
+	color: rgba(0,0,0,.4);
+	margin:0;
+}
+
+.seperator{
+	width: 10%;
+	height: 10px;
+	background-color: rgba(0,0,100,.10);
+}
+
+.thirds{
+	width: 100%;
+	margin:40px 0 ;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.half{
+	width: 100%;
+}
+
+.half > div{
+	width: 50%;
+	float: left;
+}
+
+.half img{
+	width: 100%;
+}
+.half .content{
+	margin-bottom: 15px;
+}
+.half .title{
+	margin-top: 15px;
+}
+
+.thirds > div{
+	width: calc(100%/3);
+}
+
+.title{
+	color: rgba(0,0,0,.4);
+	font-size: .9em;
+	text-transform: uppercase;
+	width: 100%;
+	float: left;
+	font-weight: 500;
+}
+
+.content{
+	font-size: 1.15em;
+	width: 100%;
+	float: left;
+	font-weight: 400;
+}
+
+@media only screen and (min-width: 1000px){
+body{
+	background-size: 100% 100% ;
+	}
+}

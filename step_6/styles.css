@@ -1,0 +1,140 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #3D3D47;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: 'Roboto', sans-serif;
+}
+
+.log-in-area{
+	width: 70%;
+	min-width: 850px;
+	background-color: #fff;
+	border-radius: 4px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	overflow: hidden;
+
+	box-shadow: 0px 5px 20px 4px rgb(42, 42, 52);
+}
+
+.image-area{
+	width: 35%;
+
+
+	background-image: url('img/side.jpg');
+	background-size: 100% 100%;
+}
+
+
+.text-area{
+	width: 65%;
+	
+	 
+
+}
+
+.header{
+	margin: 40px 50px;
+	
+}
+h1{
+	font-size: 2.5em;
+	font-weight: 300;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+p{
+	font-size: .9em;
+	margin: 0;
+	color: rgba(0,0,0,0.4);
+	width: 100%;
+}
+
+.button{
+	width: calc(100% - 100px);
+	padding: 20px;
+	margin: 20px 50px;
+	border-radius: 2px;
+	border: solid 1px rgba(0,0,0,0.07);
+	text-align: center;
+	position: relative;
+	color: rgba(0,0,0,0.4);
+	text-transform: uppercase;
+	font-size: .8em;
+	font-weight: 700;
+	cursor:pointer;
+	transition: .3s;
+	
+}
+
+.button:hover{
+	color: rgba(0,0,0,0.6);
+	box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.07);
+	border: solid 1px rgba(0,0,0,0);
+}
+
+.button::before{
+	content: "";
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	left:20px;
+	top: 17px;
+}
+
+#google::before{
+	background-image: url('img/googleplus.svg');
+}
+
+#facebook::before{
+	background-image: url('img/facebook.svg');
+}
+
+#twitter::before{
+	background-image: url('img/twitter.svg');
+}
+
+.footer{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 60px;
+	
+	padding: 30px 50px;
+	border-top:1px solid rgba(0,0,0,0.3);
+
+}
+
+.footer span{
+	font-size: .8em;
+	text-align: left;
+}
+
+.footer a{
+	color: rgba(0,0,0,0.4);
+	text-transform: uppercase;
+	font-size: .7em;
+	text-decoration: none;
+	font-weight: 700;
+	text-align: right;
+	transition: .3s;
+
+}
+
+.footer a:hover{
+	color: rgba(0,0,0,0.8);
+}

@@ -1,0 +1,26 @@
+.right-sticker{
+	width: 50%;
+	float: right;
+	position: relative;
+
+}
+
+.right-sticker img{
+	height: 80%;
+	float: left;
+	margin-left: 30%;
+}
+
+.background-image{
+	width: 100%;
+	position: absolute;
+	z-index:-1;
+	filter: brightness(80%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.background-image img{
+
+	width: 100%;
+}
